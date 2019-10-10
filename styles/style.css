@@ -1,3 +1,143 @@
 body  {
   font-family: 'Roboto', sans-serif;
 }
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 876px;
+  height: 626px;  
+  margin: 0 auto;
+  background-image: url(../image/background.png);
+  background-size: cover;
+  background-position: center center;
+  z-index: 22;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../image/bg.png);
+}
+
+.np-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 26px;
+  margin-bottom: 60px;
+}
+.np-nav__link {
+  color: #fdfdfd;
+  font-size: 12px;
+  margin-right: 49px;
+  font-weight: 300;
+  transition: .3s;
+  margin-bottom: 5px;
+}
+.np-nav__link:hover {
+  border-bottom: 1px solid #fdfdfd;;
+}
+.np-button-wrapp__item {
+  width: 24px;
+  height: 15px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #fdfdfd;
+  cursor: pointer;
+}
+.np-product {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.np-product__canvas {
+  width: 100%;
+  max-width: 500px;
+}
+
+.np-canvas__box {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 3%;
+}
+.np-product__wrapper {
+  background-color: #fff;
+  padding: 43px 33px 76px 33px;
+}
+.np-product__new {
+  display: inline-block;
+  color: #fff;
+  background-color: #ffa60d;
+  font-weight: normal;
+  padding: 6px;
+  margin-bottom: 12px;
+}
+.np-product__title {
+  font-size: 1.5rem;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 19px;
+}
+.np-product__title-blue {
+  color: #5e4fff;
+}
+.np-product__text {
+  font-size: 12px;
+  color: #000;
+}
+
+
+
+
+
+
+
+.np-product__price {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+.np-buttons {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 34px;
+}
+.np-product__btn {
+  width: 118px;
+  height: 30px;
+  color: #fff;
+  background-color: #a200b8;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 4px;
+  transition: .3s;
+  cursor: pointer;
+}
+.np-product__btn:hover {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
