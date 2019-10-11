@@ -74,6 +74,23 @@ body  {
   position: relative;
   right: 3%;
 }
+.na-canvas__wrapp {
+  position: relative;
+}
+.np-canvas__text {
+  top: 60px;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 70px;
+  letter-spacing: 3px;
+  color: #fff;
+  z-index: -1;
+}
+.np-canvas__img {
+  display: inline-block;
+  margin-top: 96px;
+}
 /* start right section */
 .np-product__wrapper {
   position: relative;
