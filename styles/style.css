@@ -19,7 +19,6 @@ body  {
   background-image: url(../image/background.png);
   background-size: cover;
   background-position: center center;
-  z-index: 22;
 }
 
 .container {
@@ -58,21 +57,36 @@ body  {
 .np-product {
   width: 100%;
   max-width: 750px;
+  max-height: 450px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
 
 .np-product__canvas {
+  position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
+  background-color: #f4f4f4;
+  z-index: 0;
+  padding-left: 25px;
+  padding-right: 20px;
+  box-shadow: -43px -4px 0px -15px rgba(255,255,255,0.45),  -70px -3px 0px -26px rgba(255,255,255,0.08);
+  background-image: url(../image/bcg.png);
 }
-
+/* box for btn */
 .np-canvas__box {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  right: 3%;
+  right: 0;
+}
+.np-canvas__btn {
+  background-color: transparent;
+  color: #1f1f1f;
+  font-size: 34px;
+  font-weight: 200;
+  cursor: pointer;
 }
 .na-canvas__wrapp {
   position: relative;
@@ -91,6 +105,17 @@ body  {
   display: inline-block;
   margin-top: 96px;
 }
+.np-image-list__menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+}
+.image-list__item {
+  margin-right: 18px;
+}
+.np-image-list__img {
+  border: 2px solid #c7c2c2;
+}
 /* start right section */
 .np-product__wrapper {
   position: relative;
@@ -100,7 +125,7 @@ body  {
 }
 .np-product__close {
   top: 0;
-  right: 1%;
+  right: 2%;
   position: absolute;
   color: #dfdfdf;
   font-size: 20px;
